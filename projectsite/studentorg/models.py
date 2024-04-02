@@ -14,7 +14,7 @@ class College(BaseModel):
         return self.college_name
 
 class Program(BaseModel):
-    prog_namme = models.CharField(max_length=150)
+    prog_name = models.CharField(max_length=150)
     college = models.ForeignKey(College, on_delete=models.CASCADE)
 
     def __str__(self):
